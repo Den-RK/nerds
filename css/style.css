@@ -1,8 +1,9 @@
 :root {
     --basic-black: #283136;
     --dark-black: #000000;
-    --bg-light: #FFFFFF;
+    --basic-white: #FFFFFF;
     --light-gray: #EEEEEE;
+    --basic-red: #FB565A;
 
 }
 
@@ -31,7 +32,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-black);
-    background-color: var(--bg-light);
+    background-color: var(--basic-white);
     max-height: 100%;
 }
 
@@ -47,16 +48,16 @@ body {
 
 .navigation__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 25px auto;
-    padding-right: 70px;
+    max-width: 500px;
 
 }
 
 .navigation__item {
-    margin-right: 50px;
+    margin-right: 48px;
     text-transform: uppercase;
     font-weight: 500;
     line-height: 30px;
@@ -85,12 +86,23 @@ body {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    margin: 0;`
+    margin: 0;
     padding-top: 65px;
     margin-bottom: 25px;
-
 }
 
 .slider__text {
+    margin-bottom: 50px;
+}
 
+.slider__btn {
+    color: var(--basic-white);
+    width: 160px;
+    height: 50px;
+    background-color: var(--basic-red);
+    padding: 15px 55px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 500;
 }
