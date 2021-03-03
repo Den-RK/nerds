@@ -39,6 +39,8 @@ body {
     max-height: 100%;
 }
 
+/* header */
+
 .header {
     background: var(--light-gray);
     padding: 50px 140px 0;
@@ -79,12 +81,15 @@ body {
     text-decoration: none;
 }
 
+/* slider */
+
 .slider {
     padding-right: 140px;
     padding-left: 140px;
     display: flex;
     background: var(--light-gray);
     max-height: 421px;
+    margin-bottom: 80px;
 }
 
 .slider__title {
@@ -112,8 +117,29 @@ body {
     font-weight: 500;
 }
 
+/* features */
 
+.features {
+    padding-right: 140px;
+    padding-left: 140px;
+}
 
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
+}
+
+.features__item {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.features__item:last-child {
+    margin-right: 0;
+}
 
 
