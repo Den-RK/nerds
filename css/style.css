@@ -138,8 +138,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 1440px;
+    left: 130px;
+    width: 1158px;
     height: 2px;
     background: var(--light-gray);
 }
@@ -151,8 +151,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
-
 
 .features__item {
     width: 300px;
@@ -247,8 +245,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 1440px;
+    left: 130px;
+    width: 1158px;
     height: 2px;
     background: var(--light-gray);
 }
@@ -349,14 +347,15 @@ body {
 .partners {
     padding: 55px 182px 35px 172px;
     position: relative;
+    margin-bottom: 84px;
 }
 
 .partners::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 130px;
+    width: 1158px;
     height: 2px;
     background: var(--light-gray);
 }
@@ -390,7 +389,12 @@ body {
 }
 
 .map {
-    padding-top: 80px;
+    width: 1440px;
+    height: 412px;
 }
 
+/* footer */
 
+.footer {
+    height: 218px;
+}
