@@ -444,15 +444,15 @@ body {
 /* partners */
 
 .partners {
-    padding: 55px 182px 35px 172px;
     position: relative;
-    margin-bottom: 84px;
+    margin-bottom: 75px;
+    padding: 33px 72px 35px 165px;
 }
 
 .partners::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 130px;
     width: 1158px;
     height: 2px;
@@ -460,12 +460,11 @@ body {
 }
 
 .partners__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 298px 298px 1fr;
+    grid-column: 1/-1;
     list-style: none;
-    margin: 0;
+    align-items: bottom;
     padding: 0;
 }
 
@@ -474,7 +473,23 @@ body {
     width: 210px;
     height: 90px;
     margin: 0;
-    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.partners__icon {
+    fill: var(--dark-black);
+    opacity: 0.2;
+    transition: all .3s;
+}
+
+.partners__icon:hover {
+    opacity: 1;
+}
+
+.partners__icon:active {
+    opacity: 0.1;
 }
 
 .partners__item:not(:nth-child(1))::before {
@@ -484,7 +499,7 @@ body {
     height: 52px;
     background: var(--light-gray);
     top: 11px;
-    left: -41px;
+    left: -50px;
 }
 
 .map {
@@ -531,6 +546,16 @@ body {
     font-weight: 500;
     margin-top: 16px;
     border-radius: 3px;
+    transition: all .3s
+}
+
+.map__btn:hover {
+    background-color: var(--dark-red);
+}
+
+.map__btn:active {
+    background-color: var(--mega-red);
+    color: var(--white-opacity);
 }
 
 .map__marker {
@@ -549,7 +574,7 @@ body {
 
 .social__list {
     list-style: none;
-    margin: 0 133px 0 0;
+    margin: 3px 133px 0 2px;
     padding: 0;
     display: flex;
 }
@@ -566,6 +591,19 @@ body {
     border-radius: 50%;
     background-color: var(--soft-gray);
     position: relative;
+    transition: all .3s;
+}
+
+.social__link:hover {
+    background-color: var(--dark-red);
+}
+
+.social__link:active {
+    background-color: var(--mega-red);
+}
+
+.social__link:active .social__icon {
+    opacity: 0.3;
 }
 
 .social__icon {
@@ -573,18 +611,18 @@ body {
 }
 
 .social__icon--vk {
-    top: 35px;
+    top: 32px;
     left: 26px;
 }
 
 .social__icon--fb {
-    top: 32px;
-    left: 35px;
+    top: 28px;
+    left: 34px;
 }
 
 .social__icon--insta {
-    top: 31px;
-    left: 32px;
+    top: 29px;
+    left: 30px;
 }
 
 .footer__desc {
