@@ -19,6 +19,8 @@
     --soft-gray: #E1E1E1;
     --soft-black: #444444;
     --grayer: #666666;
+    --border-gray: #D7DCDE;
+    --border-black: #B4B9BB;
 }
 
 * {
@@ -644,4 +646,127 @@ body {
     padding: 0;
     line-height: 22px;
     color: var(--soft-black);
+}
+
+.main__form {
+    width: 960px;
+    height: 590px;
+    background-color: var(--basic-white);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    padding: 63px 100px 84px 100px;
+    position: absolute;
+    left: 345px;
+    top: 1705px;
+    transition: all .3s;
+}
+
+.main__form--hidden {
+    display: none;
+}
+
+.main__form--title {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark-black);
+    margin: 0 0 37px 0;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.form__btn--close {
+    position: absolute;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+    border: none;
+    top: -74px;
+    right: -9px;
+    cursor: pointer;
+    outline-color: transparent;
+}
+
+.form__btn--icon {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 0;
+    right: 0;
+    fill: var(--basic-red);
+    opacity: 0.3;
+    outline: none;
+}
+
+.form__btn--icon:hover {
+    opacity: 1;
+}
+
+.form__btn--icon:active {
+    opacity: 0.1;
+    outline: none;
+}
+
+.form__label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dark-black);
+}
+
+.form__label--text {
+    margin-top: 34px;
+}
+
+.form__input {
+    width: 360px;
+    height: 50px;
+    padding: 16px;
+    margin-top: 9px;
+    border: 2px solid var(--border-gray);
+    border-radius: 3px;
+}
+
+.form__input:hover, .form__textarea:hover {
+    border: 2px solid var(--border-black);
+}
+
+.form__input:focus, .form__textarea:focus {
+    border: 2px solid var(--dark-black);
+}
+
+::-webkit-input-placeholder {
+    color: var(--soft-black);
+    line-height: 18px;
+    opacity: 0.5;
+}
+
+.form__input:focus::placeholder, .form__textarea:focus::placeholder {
+    opacity: 1;
+}
+
+.form__textarea {
+    width: 760px;
+    height: 117px;
+    padding: 16px;
+    margin-top: 9px;
+    border: 2px solid var(--border-gray);
+    border-radius: 3px;
+    margin-bottom: 47px;
+}
+
+.form__btn {
+    background-color: var(--basic-red);
+    padding: 16px 83px;
+    border: none;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    border-radius: 3px;
 }
