@@ -47,7 +47,131 @@
 
       </section>
       <section class="catalog">
+        <div class="catalog__wrapper">
+          <section class="filter">
+            <form action="submit">
+              <fieldset class="filter__field">
+                <legend class="filter__legend">Стоимость:</legend>
+                <div class="counter"></div>
+              </fieldset>
+              <fieldset class="filter__field">
+                <legend class="filter__legend">Особенности:</legend>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <input type="radio" id="adaptive" name="adaptive" class="filter__input fiter__input--radio" checked>
+                    <label for="adaptive" class="filter__label">Адаптивная</label>
+                  </li>
+                  <li class="filter__item">
+                    <input type="radio" id="fixed" name="fixed" class="filter__input fiter__input--radio">
+                    <label for="adaptive" class="filter__label">Фиксированная</label>
+                  </li>
+                  <li class="filter__item">
+                    <input type="radio" id="adaptive" name="adaptive" class="filter__input fiter__input--radio">
+                    <label for="adaptive" class="filter__label">Резиновая</label>
+                  </li>
+                </ul>
+              </fieldset>
 
+              <fieldset class="filter__field">
+                <legend class="filter__legend">Стоимость:</legend>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <input type="checkbox" id="slider" name="slider" class="filter__input filter__input--checkbox"
+                      checked>
+                    <label for="slider">Слайдер</label>
+                  </li>
+                  <li class="filter__item">
+                    <input type="checkbox" id="features" name="features" class="filter__input filter__input--checkbox">
+                    <label for="features">Блок преимуществ></label>
+                  </li>
+                  <li class="filter__item">
+                    <input type="checkbox" id="news" name="news" class="filter__input filter__input--checkbox" checked>
+                    <label for="news">Новости</label>
+                  </li>
+                  <li class="filter__item">
+                    <input type="checkbox" id="gallery" name="gallery" class="filter__input filter__input--checkbox">
+                    <label for="gallery">Галерея</label>
+                  </li>
+                  <li class="filter__item">
+                    <input type="checkbox" id="cart" name="cart" class="filter__input filter__input--checkbox">
+                    <label for="cart">Корзина</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="button">Показать</button>
+
+            </form>
+          </section>
+          <section class="products">
+            <div class="sort"></div>
+            <div class="products__items">
+              <ul class="products__list">
+                <li class="products__item">
+                  <img class="products__img" src="img/sedona.jpg" alt="Седона">
+                  <div class="products__desc">
+                    <p class="products__title">Sedona</p>
+                    <p class="products__text">Информационный сайт для туристов</p>
+                    <a href="#" class="products__btn">9 900 ₽</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/pink.jpg" alt="Пинк">
+                  <div class="products__desc">
+                    <p class="products__title">Sedona</p>
+                    <p class="products__text">Информационный сайт для туристов</p>
+                    <a href="#" class="products__btn">9 900 ₽</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/borodinsky.jpg" alt="Бородинский">
+                  <div class="products__desc">
+                    <p class="products__title">Sedona</p>
+                    <p class="products__text">Информационный сайт для туристов</p>
+                    <a href="#" class="products__btn">9 900 ₽</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/mishka.jpg" alt="Мишка">
+                  <div class="products__desc">
+                    <p class="products__title">Sedona</p>
+                    <p class="products__text">Информационный сайт для туристов</p>
+                    <a href="#" class="products__btn">9 900 ₽</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/img-aplus 1.jpg" alt="Аплюс">
+                  <div class="products__desc">
+                    <p class="products__title">Sedona</p>
+                    <p class="products__text">Информационный сайт для туристов</p>
+                    <a href="#" class="products__btn">9 900 ₽</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/kvast.jpg" alt="Кваст">
+                  <div class="products__desc">
+                    <p class="products__title">Sedona</p>
+                    <p class="products__text">Информационный сайт для туристов</p>
+                    <a href="#" class="products__btn">9 900 ₽</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="page-count">
+              <ul class="page-count__list">
+                <li class="page-count__item page-count__item--current">
+                  <a>1</a>
+                </li>
+                <li class="page-count__item page-count__item--current">
+                  <a>1</a>
+                </li>
+                <li class="page-count__item page-count__item--current">
+                  <a>1</a>
+                </li>
+              </ul>
+              <a href="#" class="page-count__btn">Следующая</a>
+            </div>
+          </section>
+        </div>
       </section>
     </main>
     <footer class="footer">
