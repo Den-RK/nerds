@@ -34,25 +34,25 @@
             <a href="#" class="navigation__link">Студия</a>
           </li>
           <li class="navigation__item"><a href="#" class="navigation__link">Клиенты</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Магазин</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link navigation__link--active">Магазин</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
         </ul>
-
-        <a href="#" class="cart">Корзина</a>
+        <div class="cart">
+          <a href="#" class="cart__link">Корзина</a>
+        </div>
       </nav>
       <h1 class="header__title">Магазин готовых шаблонов</h1>
     </header>
     <main>
-      <section class="cost">
-
-      </section>
       <section class="catalog">
         <div class="catalog__wrapper">
           <section class="filter">
             <form action="submit">
               <fieldset class="filter__field">
                 <legend class="filter__legend">Стоимость:</legend>
-                <div class="counter"></div>
+                <div class="counter">
+
+                </div>
               </fieldset>
               <fieldset class="filter__field">
                 <legend class="filter__legend">Особенности:</legend>
@@ -103,7 +103,13 @@
             </form>
           </section>
           <section class="products">
-            <div class="sort"></div>
+            <div class="sort">
+              <div class="sort__title">Сортировать:
+              </div>
+              <a href="#" class="sotl__link">По цене</a>
+              <a href="#" class="sotl__link">По типу</a>
+              <a href="#" class="sotl__link">По названию</a>
+            </div>
             <div class="products__items">
               <ul class="products__list">
                 <li class="products__item">
