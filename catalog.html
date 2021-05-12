@@ -47,15 +47,29 @@
       <section class="catalog">
         <div class="catalog__wrapper">
           <section class="filter">
-            <form action="submit">
+            <form class="filter__form" action="submit">
               <fieldset class="filter__field">
                 <legend class="filter__legend">Стоимость:</legend>
                 <div class="counter">
-
+                  <div class="range-controls">
+                    <div class="range-controls__scale">
+                      <div class="range-controls__bar"></div>
+                      <div class="range-controls__toggle range-controls__toggle--min" tabindex="0"></div>
+                      <div class="range-controls__toggle range-controls__toggle--max" tabindex="0"></div>
+                    </div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="price-controls__label price-controls__label--min-price">От
+                      <input class="price-controls__input" type="number" name="min-price" value="0">
+                    </label>
+                    <label class="price-controls__label price-controls__label--max-price">До
+                      <input class="price-controls__input" type="number" name="max-price" value="15000">
+                    </label>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filter__field">
-                <legend class="filter__legend">Особенности:</legend>
+                <legend class="filter__legend">Сетка:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
                     <input type="radio" id="adaptive" name="adaptive" class="filter__input fiter__input--radio" checked>
@@ -66,14 +80,14 @@
                     <label for="adaptive" class="filter__label">Фиксированная</label>
                   </li>
                   <li class="filter__item">
-                    <input type="radio" id="adaptive" name="adaptive" class="filter__input fiter__input--radio">
-                    <label for="adaptive" class="filter__label">Резиновая</label>
+                    <input type="radio" id="rubber" name="rubber" class="filter__input fiter__input--radio">
+                    <label for="rubber" class="filter__label">Резиновая</label>
                   </li>
                 </ul>
               </fieldset>
 
               <fieldset class="filter__field">
-                <legend class="filter__legend">Стоимость:</legend>
+                <legend class="filter__legend">Особенности:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
                     <input type="checkbox" id="slider" name="slider" class="filter__input filter__input--checkbox"
@@ -82,7 +96,7 @@
                   </li>
                   <li class="filter__item">
                     <input type="checkbox" id="features" name="features" class="filter__input filter__input--checkbox">
-                    <label for="features">Блок преимуществ></label>
+                    <label for="features">Блок преимуществ</label>
                   </li>
                   <li class="filter__item">
                     <input type="checkbox" id="news" name="news" class="filter__input filter__input--checkbox" checked>
@@ -93,8 +107,9 @@
                     <label for="gallery">Галерея</label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" id="cart" name="cart" class="filter__input filter__input--checkbox">
-                    <label for="cart">Корзина</label>
+                    <input type="checkbox" id="cart-check" name="cart-check"
+                      class="filter__input filter__input--checkbox">
+                    <label for="cart-check">Корзина</label>
                   </li>
                 </ul>
               </fieldset>
