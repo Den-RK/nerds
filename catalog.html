@@ -72,16 +72,19 @@
                 <legend class="filter__legend">Сетка:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
-                    <input type="radio" id="adaptive" name="adaptive" class="filter__input fiter__input--radio" checked>
-                    <label for="adaptive" class="filter__label">Адаптивная</label>
+                    <input type="radio" id="adaptive" name="adaptive"
+                      class="visually-hidden filter__input fiter__input--radio" checked>
+                    <label for="adaptive" class="filter__label filter__label--radio">Адаптивная</label>
                   </li>
                   <li class="filter__item">
-                    <input type="radio" id="fixed" name="fixed" class="filter__input fiter__input--radio">
-                    <label for="adaptive" class="filter__label">Фиксированная</label>
+                    <input type="radio" id="fixed" name="fixed"
+                      class="visually-hidden filter__input fiter__input--radio">
+                    <label for="fixed" class="filter__label filter__label--radio">Фиксированная</label>
                   </li>
                   <li class="filter__item">
-                    <input type="radio" id="rubber" name="rubber" class="filter__input fiter__input--radio">
-                    <label for="rubber" class="filter__label">Резиновая</label>
+                    <input type="radio" id="rubber" name="rubber"
+                      class="visually-hidden filter__input fiter__input--radio">
+                    <label for="rubber" class="filter__label filter__label--radio">Резиновая</label>
                   </li>
                 </ul>
               </fieldset>
@@ -90,30 +93,33 @@
                 <legend class="filter__legend">Особенности:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
-                    <input type="checkbox" id="slider" name="slider" class="filter__input filter__input--checkbox"
-                      checked>
-                    <label for="slider">Слайдер</label>
+                    <input type="checkbox" id="slider" name="slider"
+                      class="visually-hidden filter__input filter__input--checkbox" checked>
+                    <label class="filter__label fiter__label--checkbox" for="slider">Слайдер</label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" id="features" name="features" class="filter__input filter__input--checkbox">
-                    <label for="features">Блок преимуществ</label>
+                    <input type="checkbox" id="features" name="features"
+                      class="visually-hidden filter__input filter__input--checkbox">
+                    <label class="filter__label fiter__label--checkbox" for="features">Блок преимуществ</label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" id="news" name="news" class="filter__input filter__input--checkbox" checked>
-                    <label for="news">Новости</label>
+                    <input type="checkbox" id="news" name="news"
+                      class="visually-hidden filter__input filter__input--checkbox" checked>
+                    <label class="filter__label fiter__label--checkbox" for="news">Новости</label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" id="gallery" name="gallery" class="filter__input filter__input--checkbox">
-                    <label for="gallery">Галерея</label>
+                    <input type="checkbox" id="gallery" name="gallery"
+                      class="visually-hidden filter__input filter__input--checkbox">
+                    <label class="filter__label fiter__label--checkbox" for="gallery">Галерея</label>
                   </li>
                   <li class="filter__item">
                     <input type="checkbox" id="cart-check" name="cart-check"
-                      class="filter__input filter__input--checkbox">
-                    <label for="cart-check">Корзина</label>
+                      class="visually-hidden filter__input filter__input--checkbox">
+                    <label class="filter__label fiter__label--checkbox" for="cart-check">Корзина</label>
                   </li>
                 </ul>
               </fieldset>
-              <button type="button">Показать</button>
+              <button class="filter__btn" type="button">Показать</button>
 
             </form>
           </section>
@@ -121,9 +127,9 @@
             <div class="sort">
               <div class="sort__title">Сортировать:
               </div>
-              <a href="#" class="sotl__link">По цене</a>
-              <a href="#" class="sotl__link">По типу</a>
-              <a href="#" class="sotl__link">По названию</a>
+              <a href="#" class="sort__link sort__link--active">По цене</a>
+              <a href="#" class="sort__link">По типу</a>
+              <a href="#" class="sort__link">По названию</a>
             </div>
             <div class="products__items">
               <ul class="products__list">
