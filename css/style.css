@@ -25,6 +25,11 @@
     --shadow: rgba(0, 0, 0, 0.15);
     --catalog-active: rgba(77, 77, 77, 1);
     --catalog-def: rgba(77, 77, 77, 0.12);
+    --filter-btn-hover: #DFDFDF;
+    --filter-btn-active: #D5D5D5;
+    --filter-btn-ac-shad: rgba(0, 1, 1, 0.1);
+
+
 }
 
 * {
@@ -806,6 +811,17 @@ body {
     font-weight: 500;
     background-color: var(--light-gray);
     border: none;
+    border-radius: 3px;
+}
+
+.filter__btn:hover {
+    background-color: var(--filter-btn-hover);
+}
+
+.filter__btn:active {
+    background-color: var(--filter-btn-active);
+    box-shadow: inset 0 3px 0 var(--filter-btn-ac-shad);
+    color: var(--dark-black--mega);
 }
 
 .sort {
